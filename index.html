@@ -233,6 +233,11 @@
                         <!-- //Card-columns Body - Colunas-->
                     </div>
                     <!-- //Card -->
+
+                    <!-- Botão action -->
+                    <a href="pagInternas/servicos.php" class="btn btn-lg btn-outline-dark form-control">Veja todos os nossos serviços!</a>
+                    <!-- //Botão action -->
+
                 </div>
                 <!-- //Coluna (col-12) -->
             </div>
@@ -387,6 +392,7 @@
 
                         </div>
                         <!-- //Card Group -->
+                        <a href="pagInternas/portfolio.php" class="btn btn-lg btn-outline-dark form-control mt-2 mt-lg-4">Veja todo o nosso portfolio!</a>
                     </div>
                 </div>
                 <!-- //Row -->
@@ -458,11 +464,11 @@
                         <img src="img/gatinhos.jpg" alt="time de gatos" class="img-fluid w-100 h-75 card-img-bottom">
                     </div>
                     <!-- //Painel Equipe -->
-
                 </div>
                 <!-- //Row Corpo -->
             </div>
             <!-- //Card -->
+            <a href="pagInternas/quemsomos.php" class="btn btn-lg btn-outline-dark form-control mt-2 mt-lg-4">Veja toda a nossa equipe!</a>
         </div>
         <!-- //Container -->
     </section>
@@ -487,7 +493,6 @@
                         </div>
                     </div>
                     <!-- //Card -->
-
                 </div>
             </div>
             <!-- //Row -->
@@ -502,12 +507,12 @@
         <!-- Container -->
         <div class="container">
             <!-- Card -->
-            <div class="card">
+            <div class="card border-0">
                 <!-- Row Cabeçalho -->
                 <div class="row">
                     <div class="col-12">
                         <!-- Cabeçalho -->
-                        <div class="card-header text-center">
+                        <div class="card-header text-center border">
                             <h4 class="card-title display-4 d-block">Contatos</h4>
                             <h4 class="card-subtitle text-muted">Contate a gente</h4>
                         </div>
@@ -531,12 +536,51 @@
                                 <textarea name="mensagem" id="mensagem" cols="10" rows="3" type="text" class="form-control mb-2" placeholder="Mensagem" required></textarea>
                                 <input type="submit" name="btnEnviar" id="btnEnviar" class="btn btn-primary btn-lg mt-3" value="Enviar">
                             </form>
+
+                            <!-- Janela Modal -->
+                            <!-- Botão -->
+                            <button type="button" class="btn btn-outline-dark form-control mt-2" data-toggle="modal" data-target="#modalContatos">
+                                Outros Contatos!
+                            </button>
+                            <!-- //Botão -->
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="modalContatos" role="dialog" aria-labelledby="modalContatosLabel">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <!-- Modal Cabeçalho -->
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="modalContatosLabel">Outros contatos</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <!-- // Modal Cabeçalho -->
+
+                                        <div class="modal-body">
+                                            <p>Lorem ipsum dolor sit amet</p>
+                                            <p>Consectetur adipiscing elit</p>
+                                            <p>Lorem ipsum dolor sit amet</p>
+                                            <p>Consectetur adipiscing elit</p>
+                                            <p>Lorem ipsum dolor sit amet</p>
+                                            <p>Consectetur adipiscing elit</p>
+                                        </div>
+
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Fechar</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- //Modal -->
+                            <!-- //Janela Modal -->
                         </div>
                         <!-- //Card Corpo -->
                     </div>
                 </div>
                 <!-- //Row Corpo -->
-
             </div>
             <!-- //Card -->
         </div>

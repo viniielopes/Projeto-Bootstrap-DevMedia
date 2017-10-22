@@ -8,7 +8,7 @@
     }
     
     section {
-      padding-top: 85px;
+        padding-top: 85px;
     }
     
     .carousel-inner > .carousel-item > img {
@@ -28,4 +28,9 @@
     .card-columns {
         display: inline-block;
         -webkit-column-break-inside: avoid;
+    }
+    
+    .section_interna {
+        padding-top: 80px;
+        overflow: hidden;
     }
