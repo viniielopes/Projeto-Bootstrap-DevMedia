@@ -19,103 +19,119 @@
 
 <body>
 
+    <!-- Menu de navegação Lateral -->
     <!-- Container -->
-    <div class="container">
-        <!-- Row -->
-        <div class="row">
-            <!-- Navbar -->
-            <nav class="navbar navbar-light bg-light navbar-expand fixed-top">
-                <a href="painel.html" class="navbar-brand nav-link">Painel</a>
+    <div id="accordion" data-children=".card">
+        <div class="container">
+            <!-- Cabeçalhos -->
+            <div class="row">
 
-                <!-- Itens do navbar -->
-                <div class="collapse navbar-collapse" id="navbarLogin">
-                    <span class="navbar-text ml-auto">Painel de configuração!</span>
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active ">
-                            <a href="#" class="nav-link">
-                                <i class="fa fa-user" aria-hidden="true"></i> Login
-                            </a>
-                        </li>
-
-                    </ul>
-                </div>
-
-                <!-- //Itens do navbar -->
-            </nav>
-            <!-- //Navbar -->
-        </div>
-        <!-- //Row -->
-    </div>
-    <!-- //Container -->
-
-
-    <div class="jumbotron bg-transparent align-items-center my-auto">
-        <!-- Formulario -->
-        <form action="#" method="POST">
-            <!-- Container -->
-            <div class="container">
-                <!-- Row -->
-                <div class="row text-dark justify-content-center">
-                    <div class="col-9 col-sm-9 col-md-6 col-lg-4 col-xl-4 bg-light border">
-                        <div class="form-group">
-                            <label for="txtLogin" class="col-form-label ">Login:</label>
-                            <input type="text" name="txtLogin" id="txtLogin" class="form-control">
-                            <label for="txtSenha" class="col-form-label">Senha:</label>
-                            <input type="password" name="txtSenha" id="txtSenha" class="form-control">
-                            <button type="submit" class="btn btn-outline-info form-control mt-4">Login</button>
+                <!-- Col-12 -->
+                <div class="col-12">
+                    <!-- Card -->
+                    <div class="card">
+                        <!-- Card Cabeçalho -->
+                        <div class="card-header">
+                            <h4 class="card-title text-center">
+                                <a href="#gerenciarPost" data-toggle="collapse" aria-expanded="true" aria-controls="gerenciarPost">Gerenciar Posts</a>
+                            </h4>
                         </div>
+                        <!-- //Card Cabeçalho -->
+
+                        <div id="gerenciarPost" class="collapse" aria-labelledby="gerenciarPost" data-parent="#accordion">
+                            <!-- Card Corpo -->
+                            <div class="card-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in sapien eget arcu euismod
+                                    lobortis sed ac tortor. Donec maximus felis id mauris tincidunt, in tincidunt ipsum condimentum.
+                                    Ut ullamcorper scelerisque libero, at malesuada purus pulvinar ac. Nunc sodales rhoncus
+                                    tellus, sit amet vestibulum purus condimentum eget. Sed porttitor elit massa, quis laoreet
+                                    enim malesuada eu. Aliquam lacus ligula, consequat sed aliquam eu, tristique sed nibh.
+                                    Proin egestas felis ut aliquam facilisis. Cras augue quam, euismod sed aliquam quis,
+                                    tempor nec eros. Ut quis tempor magna. Interdum et malesuada fames ac ante ipsum primis
+                                    in faucibus. Aliquam erat volutpat.
+                                </p>
+
+                            </div>
+                        </div>
+                        <!-- //Card Corpo -->
                     </div>
+                    <!-- //Card -->
                 </div>
-                <!-- //Row -->
-            </div>
-            <!-- //Container -->
-        </form>
-        <!-- //Formulario -->
-    </div>
+                <!-- //Col-12 -->
 
-    <!-- Rodapé -->
-    <footer class="bg-white">
-        <!-- Container -->
-        <div class="container-fluid">
-            <!-- Row-->
-            <div class="row pt-2">
-                <!-- Primeira Coluna -->
-                <div class="col-6 col-sm-6 col-md-6 col-lg-6 text-center">
-                    <h1 class="lead">Conheça nossas redes sociais:</h1>
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="https://facebook.com">
-                                <i class="fa fa-facebook"></i> Conheça nosso facebook!
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/viniielopes">
-                                <i class="fa fa-github"></i> Conheça nosso GitHub!
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com">
-                                <i class="fa fa-twitter"></i> Conheça nosso Twitter!
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- //Primeira Coluna -->
+                <!-- Col-3 -->
+                <div class="col-3">
+                    <!-- Card -->
+                    <div class="card">
+                        <!-- Card Cabeçalho -->
+                        <div class="card-header">
+                            <h4 class="card-title text-center">
+                                <a href="#criarPost" data-toggle="collapse" aria-expanded="false" aria-controls="criarPost">Criar novo post</a>
+                            </h4>
+                        </div>
+                        <!-- //Card Cabeçalho -->
 
-                <!-- Segunda Coluna -->
-                <div class="col-6 col-sm-6 col-md-6 col-lg-6 text-center">
-                    <h1 class="lead">Informações adicionais:</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae tempor ex. Suspendisse quis maximus
-                        ligula. Aliquam iaculis, mauris ut facilisis imperdiet, lacus ligula malesuada diam, vitae vestibulum
-                        purus turpis blandit odio. Ut non erat eget odio commodo dapibus eget.</p>
+                        <!-- Card Corpo -->
+                        <div id="criarPost" class="collapse" aria-labelledby="criarPost" data-parent="#accordion">
+
+                            <div class="card-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in sapien eget arcu euismod
+                                    lobortis sed ac tortor. Donec maximus felis id mauris tincidunt, in tincidunt ipsum condimentum.
+                                    Ut ullamcorper scelerisque libero, at malesuada purus pulvinar ac. Nunc sodales rhoncus
+                                    tellus, sit amet vestibulum purus condimentum eget. Sed porttitor elit massa, quis laoreet
+                                    enim malesuada eu. Aliquam lacus ligula, consequat sed aliquam eu, tristique sed nibh.
+                                    Proin egestas felis ut aliquam facilisis. Cras augue quam, euismod sed aliquam quis,
+                                    tempor nec eros. Ut quis tempor magna. Interdum et malesuada fames ac ante ipsum primis
+                                    in faucibus. Aliquam erat volutpat.
+                                </p>
+
+                            </div>
+                        </div>
+                        <!-- //Card Corpo -->
+                    </div>
+                    <!-- //Card -->
                 </div>
-                <!-- //Segunda Coluna -->
+                <!-- //Col-3 -->
+
+                <!-- Col-3 -->
+                <div class="col-3">
+                    <!-- Card -->
+                    <div class="card">
+                        <!-- Card Cabeçalho -->
+                        <div class="card-header">
+                            <h4 class="card-title text-center">
+                                <a href="#trocaBanner" data-toggle="collapse" aria-expanded="false" aria-controls="trocaBanner">Trocar banner</a>
+                            </h4>
+                        </div>
+                        <!-- //Card Cabeçalho -->
+
+                        <!-- Card Corpo -->
+                        <div id="trocaBanner" class="collapse" aria-labelledby="trocaBanner" data-parent="#accordion">
+                            <div class="card-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in sapien eget arcu euismod
+                                    lobortis sed ac tortor. Donec maximus felis id mauris tincidunt, in tincidunt ipsum condimentum.
+                                    Ut ullamcorper scelerisque libero, at malesuada purus pulvinar ac. Nunc sodales rhoncus
+                                    tellus, sit amet vestibulum purus condimentum eget. Sed porttitor elit massa, quis laoreet
+                                    enim malesuada eu. Aliquam lacus ligula, consequat sed aliquam eu, tristique sed nibh.
+                                    Proin egestas felis ut aliquam facilisis. Cras augue quam, euismod sed aliquam quis,
+                                    tempor nec eros. Ut quis tempor magna. Interdum et malesuada fames ac ante ipsum primis
+                                    in faucibus. Aliquam erat volutpat.
+                                </p>
+
+                            </div>
+                        </div>
+                        <!-- //Card Corpo -->
+                    </div>
+                    <!-- //Card -->
+                </div>
+                <!-- //Col-3 -->
+
             </div>
             <!-- //Row -->
-    </footer>
-    <!-- //Rodapé -->
+        </div>
+        <!-- //Container -->
     </div>
-    <!-- //Container -->
+    <!-- //Menu de navegação lateral -->
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
